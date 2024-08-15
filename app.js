@@ -1,4 +1,7 @@
 const socket = io('https://talkwithmechatapp-server.onrender.com')
+// const socket = io('ws://localhost:10000')
+
+socket.emit("requestRoomList")
 
 const msgInput = document.querySelector('#message')
 const nameInput = document.querySelector('#name')
