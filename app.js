@@ -102,7 +102,7 @@ function showUsers(users) {
 
 function showRooms(rooms) {
     roomList.textContent = ''
-    if (rooms) {
+    if (rooms && rooms.length() > 0) {
         roomList.innerHTML = '<em>Active Rooms:</em>'
         rooms.forEach((room, i) => {
             roomList.textContent += ` ${room}`
